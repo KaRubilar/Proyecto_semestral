@@ -18,11 +18,14 @@ body{
 .icon-cart {
     width: 2rem; /* Tamaño del icono */
     height: 2rem; /* Tamaño del icono */
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
     margin-right: 1rem; /* Espacio entre el ícono y el texto del carrito */
 }
-
+.icon-close {
+    width: 1.2rem; /* Tamaño del icono */
+    height: 1.2rem; /* Tamaño del icono */
+}
 /* Estilos para el: Header */  
 header{
     display: flex;
@@ -32,6 +35,11 @@ header{
     color: #5f5a5a;
     padding: 1rem 2rem; /* Espaciado del header */
 }
+
+.navbar-custom {
+    margin-left: 20px; /* Puedes ajustar el valor del margen según sea necesario */
+}
+
 
 /* Estilos para el: container-cart-products */  
 .container-cart-products {
@@ -62,6 +70,32 @@ header{
 
 .hidden-cart {
     display: block !important;
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 
@@ -114,4 +148,24 @@ header{
 
 .item-description button:hover {
     background-color: #333; /* Cambia el color de fondo cuando se pasa el cursor */
+}
+.logo-img {
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Lo sitúa en la parte superior del contenedor */
+    left: 0; /* Lo sitúa en la esquina izquierda del contenedor */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    padding: 10px; /* Añade espacio alrededor de la imagen */
+    background-color: white; /* Establece el color de fondo */
+}
+
+
+
+#carouselExampleControls {
+    width: 60%; /* Tamaño del carrusel al 60% de la página */
+    margin: auto; /* Centrar horizontalmente */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+.carousel-item img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes del carrusel */
 }
