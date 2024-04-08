@@ -1,0 +1,171 @@
+/* Estilos para el: Global */  
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el: body */  
+body{
+    margin: 0;
+    font-family: 'lato', sans-serif;
+    color : #282727;
+}
+
+/* Estilos para los: iconos */  
+.icon-cart {
+    width: 2rem; /* Tamaño del icono */
+    height: 2rem; /* Tamaño del icono */
+    font-size: 1.2rem;
+    color: #333;
+    margin-right: 1rem; /* Espacio entre el ícono y el texto del carrito */
+}
+.icon-close {
+    width: 1.2rem; /* Tamaño del icono */
+    height: 1.2rem; /* Tamaño del icono */
+}
+/* Estilos para el: Header */  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente */
+    background-color:#fff;
+    color: #5f5a5a;
+    padding: 1rem 2rem; /* Espaciado del header */
+}
+
+.navbar-custom {
+    margin-left: 20px; /* Puedes ajustar el valor del margen según sea necesario */
+}
+
+
+/* Estilos para el: container-cart-products */  
+.container-cart-products {
+    position: absolute;
+    top: calc(100% + 1rem); /* Posiciona el carrito debajo del navbar */
+    right: 0;
+    margin-top: -1rem; /* Ajusta la posición vertical del carrito */
+    background-color: #fff;
+    width: 300px; /* Reduce el ancho del pop-up */
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+    display: none; /* Oculta inicialmente el carrito */
+}
+
+.container-icon {
+    position: relative; /* Necesario para que la posición absoluta del carrito sea relativa a este contenedor */
+    display: flex; /* Para alinear verticalmente los íconos del carrito */
+    align-items: center; /* Centra verticalmente */
+}
+
+.count-products {
+    position: absolute; /* Ajusta la posición del contador del carrito */
+    top: 0;
+    right: 0;
+}
+
+
+.hidden-cart {
+    display: block !important;
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+/* Estilos para el: main */
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cambiado para mejor adaptabilidad */
+    gap: 20px; 
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 2rem 0; /* Cambiado a unidades relativas */
+    max-width: 1200px; /* Establece un ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Estilos para el: item */  
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease; /* Agrega una transición suave al hacer hover */
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+}
+
+.item img {
+    width: 100%;
+    height: auto; /* Usa auto para mantener la proporción de aspecto */
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.item:hover img {
+    transform: scale(1.1); /* Ajusta la transformación para agrandar la imagen */
+}
+
+/* Estilos para el botón "Añadir al carro" */
+.item-description button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem 1rem; /* Cambiado a unidades relativas */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+}
+
+.item-description button:hover {
+    background-color: #333; /* Cambia el color de fondo cuando se pasa el cursor */
+}
+.logo-img {
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Lo sitúa en la parte superior del contenedor */
+    left: 0; /* Lo sitúa en la esquina izquierda del contenedor */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    padding: 10px; /* Añade espacio alrededor de la imagen */
+    background-color: white; /* Establece el color de fondo */
+}
+
+
+
+#carouselExampleControls {
+    width: 60%; /* Tamaño del carrusel al 60% de la página */
+    margin: auto; /* Centrar horizontalmente */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+.carousel-item img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes del carrusel */
+}
