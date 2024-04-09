@@ -36,8 +36,8 @@ header{
     padding: 1rem 2rem; /* Espaciado del header */
 }
 
-.navbar-custom {
-    margin-left: 20px; /* Puedes ajustar el valor del margen según sea necesario */
+.navbar {
+    margin-left: 250px; /* Puedes ajustar el valor del margen según sea necesario */
 }
 
 
@@ -161,7 +161,7 @@ header{
 
 
 #carouselExampleControls {
-    width: 60%; /* Tamaño del carrusel al 60% de la página */
+    width: 40%; /* Tamaño del carrusel al 60% de la página */
     margin: auto; /* Centrar horizontalmente */
     margin-top: 2rem; /* Espacio superior */
 }
