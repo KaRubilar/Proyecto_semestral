@@ -363,6 +363,10 @@ footer .container{
     text-align: center;
 }
 
+#productos button{
+    border-radius: 10px;
+}
+
 #carouselExampleControls {
     width: 70%; /* Tamaño del carrusel al 60% de la página */
     margin: auto; /* Centrar horizontalmente */
@@ -384,4 +388,119 @@ footer .container{
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: #e9ecef6b; /* Cambia el color de fondo al pasar el mouse por encima de los botones del carrusel */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    background-color: rgba(245, 245, 245, 0.9); /* Agrega un color de fondo para el encabezado */
+}
+
+#carouselExampleControls {
+    margin-top: 200px; /* Ajusta este valor según la altura de tu encabezado */
+    /* Resto de tus estilos para el carrusel */
+}
+
+#medicina .container{
+    display: flex;
+    justify-content: center;
+}
+
+#medicina .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#medicina h2{
+    margin-top: 0px;
+}
+
+#medicina button{
+    border-radius: 10px;
+}
+
+#medicina .img-container{
+    background-image: url("img/medicamentos-icon.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 8px 8px 8px  rgba(0,0,0,0.1);
+}
+
+#jugueteria .container{
+    display: flex;
+    justify-content: center;
+}
+
+#jugueteria .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#jugueteria h2{
+    margin-top: 0px;
+}
+
+#jugueteria button{
+    border-radius: 10px;
+}
+
+#jugueteria .img-container{
+    background-image: url("img/jugueteria-icon.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 8px 8px 8px  rgba(0,0,0,0.1);
+}
+
+#alimentos .container{
+    display: flex;
+    justify-content: center;
+}
+
+#alimentos .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#alimentos h2{
+    margin-top: 0px;
+}
+
+#alimentos button{
+    border-radius: 10px;
+}
+
+#alimentos .img-container{
+    background-image: url("img/alimentos-icon.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 8px 8px 8px  rgba(0,0,0,0.1);
+}
+
+#categorias h2{
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
