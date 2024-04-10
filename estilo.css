@@ -368,9 +368,9 @@ footer .container{
 }
 
 #carouselExampleControls {
-    width: 70%; /* Tamaño del carrusel al 60% de la página */
-    margin: auto; /* Centrar horizontalmente */
-    margin-top: 10rem; /* Espacio superior */
+    width: 80%; /* Tamaño del carrusel al 60% de la página */
+    margin: auto;
+    margin-top: 100px;
 }
 
 .carousel-item img {
@@ -387,7 +387,7 @@ footer .container{
 /* También puedes agregar estilos de hover para los botones del carrusel si lo deseas */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: #e9ecef6b; /* Cambia el color de fondo al pasar el mouse por encima de los botones del carrusel */
+    background-color: #e9ecef57; /* Cambia el color de fondo al pasar el mouse por encima de los botones del carrusel */
 }
 
 header {
@@ -395,11 +395,6 @@ header {
     width: 100%;
     z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
     background-color: rgba(245, 245, 245, 0.9); /* Agrega un color de fondo para el encabezado */
-}
-
-#carouselExampleControls {
-    margin-top: 200px; /* Ajusta este valor según la altura de tu encabezado */
-    /* Resto de tus estilos para el carrusel */
 }
 
 #medicina .container{
@@ -503,4 +498,13 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+#medicina-side h2{
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+
 }
