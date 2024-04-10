@@ -169,3 +169,30 @@ header{
 .carousel-item img {
     border-radius: 10px; /* Bordes redondeados para las imágenes del carrusel */
 }
+#curvo{
+    border-radius: 35px;
+}
+
+/* Estilo para el navbar */
+nav.navbar {
+    background-color: #FF0000; /* Rojo fuerte */
+}
+
+/* Estilo para el footer */
+footer#footercontent {
+    background-color: #FF0000; /* Rojo fuerte */
+}
+/* Estilo para el texto del navbar */
+nav.navbar a.navbar-brand,
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    color: #FFFFFF; /* Blanco */
+}
+
+/* Estilo para el texto del footer */
+footer#footercontent a.menu-footer,
+footer#footercontent ul.menu-footer li a {
+    color: #FFFFFF; /* Blanco */
+}
+#btn-oscuro{
+    background-color: #860909;
+}
