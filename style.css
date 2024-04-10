@@ -39,65 +39,11 @@ header{
 .navbar {
     margin-left: 250px; /* Puedes ajustar el valor del margen según sea necesario */
 }
-
-
-/* Estilos para el: container-cart-products */  
-.container-cart-products {
-    position: absolute;
-    top: calc(100% + 1rem); /* Posiciona el carrito debajo del navbar */
-    right: 0;
-    margin-top: -1rem; /* Ajusta la posición vertical del carrito */
-    background-color: #fff;
-    width: 300px; /* Reduce el ancho del pop-up */
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
-    display: none; /* Oculta inicialmente el carrito */
-}
-
 .container-icon {
     position: relative; /* Necesario para que la posición absoluta del carrito sea relativa a este contenedor */
     display: flex; /* Para alinear verticalmente los íconos del carrito */
     align-items: center; /* Centra verticalmente */
 }
-
-.count-products {
-    position: absolute; /* Ajusta la posición del contador del carrito */
-    top: 0;
-    right: 0;
-}
-
-
-.hidden-cart {
-    display: block !important;
-}
-
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
-
-.titulo-producto-carrito{
-    font-size: 20px;
-}
-
-.precio-producto-carrito{
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
 
 /* Estilos para el: main */
 .container-items {
