@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,78 +9,44 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <style>
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
 
-    .logo {
-        margin-left: 10px;
-    }
-
-    .register-btn {
-        margin-right: 10px;
-    }
-    .logo-container {
-            flex-grow: 1;
-        }
- </style>
-
-<body>   
-    <header class="py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-            <img src="img/somos-mascotas.png" alt="logo">
-        </div>
-        <div class="dropdown" style="padding-left: 10px; float: right; border-radius: 25px;">
-            <button id="register-btn"  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-              Iniciar sesion
-            </button>
-            <div id="dpcolor"class="dropdown-menu dropdown-menu-sm-end ">
-              <form class="px-4 py-3">
-                <div class="mb-3">
-                  <label for="exampleDropdownFormEmail1" class="form-label">Correo electronico</label>
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="correo@ejemplo.com">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-                </div>
-                <div class="mb-3">
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
-                      Recordar
-                    </label>
-                  </div>
-                </div>
-                <button id="btn-oscuro" type="submit" class="btn btn-primary">Ingresar</button>
-              </form>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">¿Primera vez por aca? Registrate</a>
-              <a class="dropdown-item" href="#">¿Olvidaste la contraseña?</a>
-            </div>
-        </div>
-    </div>
-    <nav>
-        <div class="container">
+    <header>
+    <div class="container">
+        <img src="img/somos-mascotas.png"  style="float: left;" width="110px" height="110px" alt="logo" >
+        <nav>
             <a href="principal.html">Inicio</a>
-            <a href="#somos-mascotas">Somos mascotas</a>
-            <a href="ofertas.html">Categorías</a>
-            <a href="contactanos.html">Contáctanos</a>
-        </div>
-    </nav>
-</header>
-    
+            <a href="principal.html">Somos mascotas</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="">Contáctanos</a>
+        </nav>
+    </div>
+    </header>
     <section id="hero">
         <h1>¡Tu tienda de mascotas favorita!</h1>
         <a href="ofertas.html">
         <button>Nuestras ofertas</button>
         </a>
     </section>
+
+
+    <section id="somos-mascotas">
+        <div class="container">
+        <div class="img-container"></div>
+        <div class="texto">
+
+        
+        <h2>Somos <span class="color-acento">Mascotas</span></h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Rem, praesentium fuga temporibus deserunt 
+            laborum ipsum officiis, sapiente, itaque sunt pariatur 
+            debitis! Corrupti architecto praesentium qui quibusdam 
+            sint amet quaerat exercitationem?</p>
+        </div>
+    </div>
+    </section>
+
+
 
     <section id="productos">
         <h2>Nuestros productos</h2>
@@ -128,22 +94,6 @@
         </div>
     </div>
 
-    </section>
-
-    <section id="somos-mascotas">
-        <div class="container">
-        <div class="img-container"></div>
-        <div class="texto">
-
-        
-        <h2>Somos <span class="color-acento">Mascotas</span></h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing 
-            elit. Rem, praesentium fuga temporibus deserunt 
-            laborum ipsum officiis, sapiente, itaque sunt pariatur 
-            debitis! Corrupti architecto praesentium qui quibusdam 
-            sint amet quaerat exercitationem?</p>
-        </div>
-    </div>
     </section>
 
     <section id="nuestras-sucursales">
