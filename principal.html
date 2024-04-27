@@ -49,12 +49,44 @@
                                 </ul>
 
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Productos" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </div>
+                                <div class="dropdown" style="padding-left: 10px; float: right; border-radius: 25px;">
+                                    <button id="register-btn"  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Iniciar sesion
+                                    </button>
+                                    <div id="dpcolor"class="dropdown-menu dropdown-menu-sm-end ">
+                                    <form class="px-4 py-3">
+                                        <div class="mb-3">
+                                        <label for="exampleDropdownFormEmail1" class="form-label">Correo electronico</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="correo@ejemplo.com">
+                                        </div>
+                                        <div class="mb-3">
+                                        <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+                                        </div>
+                                        <div class="mb-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                            Recordar
+                                            </label>
+                                        </div>
+                                        </div>
+                                        <button id="btn-oscuro" type="submit" class="btn btn-primary">Ingresar</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">¿Primera vez por aca? Registrate</a>
+                                    <a class="dropdown-item" href="#">¿Olvidaste la contraseña?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Productos" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
             </nav>
         </div>
 
@@ -99,6 +131,57 @@
         </a>
     </section>
 
+    
+    <section id="nuestras-sucursales">
+        <div class="container">
+            <h2>Nuestras sucursales</h2>
+            <div class="sucursales">
+                <div class="carta" style="width: 25rem; height: 38rem;" >
+                    <h3>Sucursal Maipú</h3>
+                    <br>
+                    <p> En nuestro acogedor establecimiento, nos
+                        apasiona brindar productos y servicios
+                        de alta calidad para todas las mascotas
+                        y sus dueños. Desde alimentos nutritivos
+                        hasta juguetes divertidos y cuidados de
+                        salud, estamos aquí para satisfacer todas
+                        las necesidades de tus queridas mascotas.
+                        </p>
+                    <br>
+                    <h5 style="color: black;">Puedes encontrarnos en:</h5>
+                    <p>Av Americo Vespucio 399 Local 363-365, Maipú, Región Metropolitana</p>
+                </div>
+                <div class="carta" style="width: 25rem; height: 38rem;">
+                    <h3>Sucursal Puente Alto</h3>
+                    <br>
+                    <p>¡También en Puente Alto! En nuestro espacio dedicado,
+                        nos apasiona brindar productos y servicios excepcionales
+                        para mimar a tus adoradas mascotas. Desde alimentos saludables
+                        hasta accesorios modernos y servicios integrales de cuidado,
+                        nos comprometemos a satisfacer tus fieles compañeros peludos.
+                        </p>
+                    <br>
+                    <h5 style="color: black;">Puedes encontrarnos en:</h5>
+                    <p>Av. Gabriela Ote. 02174, 8207282 Puente Alto, Región Metropolitana</p>
+                </div>
+
+                <div class="carta" style="width: 25rem; height: 38rem;">
+                    <h3>Sucursal Santiago</h3>
+                    <br>
+                    <p>¡La primera y más antigua tienda de mascotas en el corazón de
+                        Santiago Centro! En nuestro espacio histórico, nos dedicamos con
+                        pasión a brindar productos y servicios de alta calidad para
+                        consentir a tus amadas mascotas con alimentos saludables
+                        hasta accesorios modernos y servicios integrales de cuidado.                                   <!-- Aquí agregamos espacios en blanco -->
+                        </p>
+                    <br>
+                    <h5 style="color: black;">Puedes encontrarnos en:</h5>
+                    <p>Compañía de Jesús 1214, Local 120-A, Santiago, Región Metropolitana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="somos-mascotas">
         <div class="container">
@@ -129,123 +212,6 @@
         </div>
     </section>
 
-
-
-    <section id="productos">
-        <h2>Nuestros productos</h2>
-        <!--Primer producto-->
-        <div class="container-items">
-            <div class="item" style="height: 100%; 
-        padding: 20px;
-        box-sizing: border-box;">
-                <div class="item-image">
-                    <img src="img/comida-uno.jpg" alt="Producto">
-                </div>
-                <div class="item-description">
-                    <br>
-                    <h3>Nath chicken and brown rice adulto</h3>
-                    <p>Nath ha elaborado una comida para perros adultos de razas medianas que pesan entre 11 y 25 kg. Su
-                        objetivo es cubrir y satisfacer todas las necesidades nutricionales de estas mascotas a partir
-                        de los 12 meses de edad.</p>
-                    <p>$21.990</p>
-                    <a href="nath-alimento.html">
-                        <button style="padding: 10px 20px;">Información</button>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Segundo producto -->
-            <div class="item" style="height: 100%; padding: 20px; box-sizing: border-box;">
-                <div class="item-image">
-                    <img src="img/comida-dos.jpg" alt="Producto2">
-                </div>
-                <div class="item-description">
-                    <br>
-                    <h3>Bravery chicken adulto</h3>
-                    <p>Chicken Adult de Bravery es un alimento con pollo para perros adultos de razas medianas y
-                        grandes. Libre de grano y cereales, además, de ser monoproteíco, con pollo siempre como primer
-                        ingrediente y enriquecido con antioxidantes hipoalergénicos 100% naturales.</p>
-                    <p>$26.990</p>
-                    <a href="bravery-adulto.html" style="display: inline-block;">
-                        <button style="padding: 10px 20px; margin-top: 10px;">Información</button>
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Tercer producto -->
-            <div class="item" style="height: 100%; 
-        padding: 20px;
-        box-sizing: border-box;">
-                <div class="item-image">
-                    <img src="img/comida-tres.jpg" alt="Producto">
-                </div>
-                <div class="item-description">
-                    <br>
-                    <h3>Hills canine metabolic</h3>
-                    <p>Hill's Prescription Diet Metabolic Weight Management Canine es un alimento bajo en grasa para
-                        perros adultos con sobrepeso, además contiene todos los nutrientes que tu perro necesita para
-                        estar fuerte, enérgico y sano.</p>
-                    <p>$64.990</p>
-                    <a href="hills-canine.html">
-                        <button style="padding: 10px 20px;margin-top: 40px;">Información</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="nuestras-sucursales">
-        <div class="container">
-            <h2>Nuestras sucursales</h2>
-            <div class="sucursales">
-                <div class="carta">
-                    <h3>Sucursal Maipú</h3>
-                    <br>
-                    <p> En nuestro acogedor establecimiento, nos
-                        apasiona brindar productos y servicios
-                        de alta calidad para todas las mascotas
-                        y sus dueños. Desde alimentos nutritivos
-                        hasta juguetes divertidos y cuidados de
-                        salud, estamos aquí para satisfacer todas
-                        las necesidades de tus queridas mascotas.
-                        ¡Ven y descubre todo lo que tenemos para
-                        ofrecer y déjanos ser parte de la felicidad
-                        y el bienestar de tus fieles compañeros
-                        peludos!</p>
-                    <br>
-                    <h5 style="color: black;">Puedes encontrarnos en:</h5>
-                    <p>Av Americo Vespucio 399 Local 363-365, Maipú, Región Metropolitana</p>
-                </div>
-                <div class="carta">
-                    <h3>Sucursal Puente Alto</h3>
-                    <br>
-                    <p>¡También en Puente Alto! En nuestro espacio dedicado,
-                        nos apasiona brindar productos y servicios excepcionales
-                        para mimar a tus adoradas mascotas. Desde alimentos saludables
-                        hasta accesorios modernos y servicios integrales de cuidado,
-                        nos comprometemos a satisfacer todas las necesidades de
-                        tus fieles compañeros peludos.</p>
-                    <br>
-                    <h5 style="color: black;">Puedes encontrarnos en:</h5>
-                    <p>Av. Gabriela Ote. 02174, 8207282 Puente Alto, Región Metropolitana</p>
-                </div>
-                <div class="carta">
-                    <h3>Sucursal Santiago</h3>
-                    <br>
-                    <p>¡La primera y más antigua tienda de mascotas en el corazón de
-                        Santiago Centro! En nuestro espacio histórico, nos dedicamos con
-                        pasión a brindar productos y servicios de alta calidad para
-                        consentir a tus amadas mascotas.</p>
-                    <br>
-                    <h5 style="color: black;">Puedes encontrarnos en:</h5>
-                    <p>Compañía de Jesús 1214, Local 120-A, Santiago, Región Metropolitana</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="final">
         <h2>¿Buscas algo específico?</h2>
         <br>
@@ -253,6 +219,7 @@
             <button>¡Comprar aquí!</button>
         </a>
     </section>
+
 
     <footer>
         <div class="container">

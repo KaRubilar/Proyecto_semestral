@@ -270,3 +270,6 @@ header{
     padding: 15px 10px;
     cursor: pointer;
 }
+#register-btn{
+    background-color: red;
+}

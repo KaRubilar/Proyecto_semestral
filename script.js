@@ -122,3 +122,46 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+$("#formulario_contacto").validate({
+	rules: {
+		name: {
+			required: true,
+			minlength: 3,
+			maxlenght: 30
+		},
+		email: {
+			required: true,
+			email: true
+		},
+		message: {
+			required: true,
+			minlength: 10,
+			maxlenght: 1000
+		}
+	},
+	messages: {
+		name: {
+			required: "Por favor, ingrese su nombre",
+			minlength: "El nombre debe tener al menos 3 caracteres"
+		},
+		email: {
+			required: "Por favor, ingrese su correo electrónico",
+			email: "Por favor, ingrese un correo electrónico válido"
+		},
+		message: {
+			required: "Por favor, ingrese un mensaje",
+			minlength: "El mensaje debe tener al menos 10 caracteres"
+		}
+	}
+});
+
+$("guardar").click(function(){
+	let nombre = $("#name").val();
+	let email = $("#email").val();
+	let mensaje = $("message").val();
+	let avisos = $("avisos").is(":checked");
+
+	console.log(nombre, email, mensaje, avisos)
+
+}) 
