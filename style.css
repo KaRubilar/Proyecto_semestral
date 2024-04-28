@@ -63,46 +63,45 @@ header{
 .hidden-cart {
     display: block !important;
 }
-
-
-/* Estilos para el: main */
+/* Estilos para el: container-items */
 .container-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cambiado para mejor adaptabilidad */
-    gap: 20px; 
-    justify-content: center; /* Centra los elementos horizontalmente */
-    padding: 2rem 0; /* Cambiado a unidades relativas */
-    max-width: 1200px; /* Establece un ancho máximo */
-    margin: 0 auto; /* Centra horizontalmente */
+    display: flex; /* Cambiado a flex */
+    flex-direction: column; /* Apila los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Estilos para el: item */  
+/* Estilos para el: item */
 .item {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease; /* Agrega una transición suave al hacer hover */
+    transition: transform 0.3s ease;
+    width: 100%; /* Ajusta el ancho al contenedor */
 }
 
 .item:hover {
-    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+    transform: translateY(-5px);
 }
 
 .item img {
     width: 100%;
-    height: auto; /* Usa auto para mantener la proporción de aspecto */
+    height: auto;
     border-radius: 10px;
     transition: transform 0.5s;
 }
 
 .item:hover img {
-    transform: scale(1.1); /* Ajusta la transformación para agrandar la imagen */
+    transform: scale(1.1);
 }
 
 .item-description button:hover {
-    background-color: #333; /* Cambia el color de fondo cuando se pasa el cursor */
+    background-color: #333;
 }
 
 .container-icon{

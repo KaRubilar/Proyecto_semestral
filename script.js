@@ -1,8 +1,16 @@
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
-btnCart.addEventListener('click', () => {
+
+function toggleCart() {
     containerCartProducts.classList.toggle('hidden-cart');
-});
+}
+
+// Ocultar el carrito de compras al cargar la página
+containerCartProducts.classList.add('hidden-cart');
+
+btnCart.addEventListener('click', toggleCart);
+
+
 
 /* ========================= */
 const cartInfo = document.querySelector('.cart-product');
@@ -23,13 +31,18 @@ const cartTotal = document.querySelector('.cart-total');
 
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
-		const product = e.target.parentElement;
+		const product = e.target.closest('.item');
 
-		const infoProduct = {
-			quantity: 1,
-			title: product.querySelector('h3').textContent,
-			price: product.querySelector('p').textContent,
-		};
+		// Obtener el precio del producto y convertirlo a un número
+        const priceText = product.querySelector('p').textContent;
+        const price = parseFloat(priceText.replace('$', '').replace(',', ''));
+
+const infoProduct = {
+    quantity: 1,
+    title: product.querySelector('h3').textContent,
+    price: price, // Usar el precio convertido a número
+};
+
 
 		const exits = allProducts.some(
 			product => product.title === infoProduct.title
@@ -52,6 +65,7 @@ productsList.addEventListener('click', e => {
 		showHTML();
 	}
 });
+
 
 rowProduct.addEventListener('click', e => {
 	if (e.target.classList.contains('icon-close')) {

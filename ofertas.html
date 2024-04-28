@@ -57,7 +57,7 @@
             </nav>
         </div>
 
-        <div class="container-icon">
+        <div class="container-icon" >
             <div class="container-cart-icon">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -102,12 +102,13 @@
                         </svg>
                     </div>
                 </div>
-
+                <p class="cart-empty" style="text-align: center; padding-top: 10px;">
+                    El carrito está vacío</p>
                 <div class="cart-total hidden">
                     <h3>Total:</h3>
-                    <span class="total-pagar">$200</span>
+                    <span class="total-pagar">$0</span>
                 </div>
-                <p class="cart-empty">El carrito está vacío</p>
+                
             </div>
         </div>
 
@@ -144,8 +145,9 @@
 
     <section id="productos">
         <h2>Nuestras ofertas</h2>
+
         <!--Primer producto-->
-        <div class="container-items" style="width: 50rem; height: 70rem;">
+        <div class="container-items">
             <div class="item">
                 <div class="item-image">
                     <figure>
@@ -153,52 +155,60 @@
                     </figure>
                 </div>
                 <div class="item-description">
-                    <br>
                     <h3>CLAVUBACTIN® comprimidos para perros y gatos</h3>
-                    <p>Tratamiento de infecciones causadas por bacterias sensibles a amoxicilina en
-                        combinación con ácido clavulánico.</p>
-                    <p>$35990</p>
+                    <span id="info">Tratamiento de infecciones causadas por bacterias sensibles a amoxicilina en
+                        combinación con ácido clavulánico.</span>
+                    <p>$35.990</p>
                     <a href="clavubactin.html"></a>
                     <button 
-                        class="btn-add-cart" 
-                        style="padding: 10px 20px; margin-top:125px;">
+                        class="btn-add-cart" >
                         Añadir al carro</button>
                 </div>
             </div>
+        </div>
 
             <!-- Segundo producto -->
-            <div class="item">
-                <div class="item-image">
-                    <img src="img/juguete-dos.jpg" alt="Producto2">
+        <div class="container-items" >
+                <div class="item">
+                    <div class="item-image">
+                        <figure>
+                        <img src="img/juguete-dos.jpg" alt="Producto2">
+                        </figure>
+                    </div>
+                    <div class="item-description">
+                        <h3>Árbol para gato con poste rascador</h3>
+                        <span id="info" >Mantén a tu gato activo y entretenido con una bola de felpa de resorte y una bola colgante que
+                            despiertan su instinto de juego.</span>
+                        <p>$17.990</p>
+                        <a href="arbol-gato.html"></a>
+                        <button 
+                            class="btn-add-cart">
+                            Añadir al carro</button>
+                        
+                    </div>
                 </div>
-                <div class="item-description">
-                    <br>
-                    <h3>Árbol para gato con poste rascador</h3>
-                    <p>Mantén a tu gato activo y entretenido con una bola de felpa de resorte y una bola colgante que
-                        despiertan su instinto de juego.</p>
-                    <p>$17.990</p>
-                    <a href="arbol-gato.html">
-                        <button class="btn-add-cart" data-nombre="Bravery chicken adulto" data-precio="26990"
-                            style="padding: 10px 20px;margin-top: 130px;">Añadir al carro</button>
-                    </a>
-                </div>
-            </div>
+        </div>
 
             <!-- Tercer producto -->
-            <div class="item">
-                <div class="item-image">
-                    <img src="img/comida-uno.jpg" alt="Producto">
+        <div class="container-items" >
+                <div class="item">
+                    <div class="item-image">
+                        <figure>
+                        <img src="img/comida-uno.jpg" alt="Producto">
+                        </figure>
+                    </div>
+                    <div class="item-description">
+                        <br>
+                        <h3>Nath chicken and brown rice adulto</h3>
+                        <span id="info">Nath ha elaborado una comida para perros adultos de razas medianas que pesan entre 11 y 25 kg. Su
+                            objetivo es cubrir y satisfacer todas las necesidades nutricionales de estas mascotas a partir
+                            de los 12 meses de edad.</span>
+                        <p>$21.990</p>
+                        <button 
+                            class="btn-add-cart">
+                            Añadir al carro</button>
+                    </div>
                 </div>
-                <div class="item-description">
-                    <br>
-                    <h3>Nath chicken and brown rice adulto</h3>
-                    <p>Nath ha elaborado una comida para perros adultos de razas medianas que pesan entre 11 y 25 kg. Su
-                        objetivo es cubrir y satisfacer todas las necesidades nutricionales de estas mascotas a partir
-                        de los 12 meses de edad.</p>
-                    <p>$21.990</p>
-                    <button class="btn-add-cart" style="padding: 10px 20px;margin-top: 40px;">Añadir al carro</button>
-                </div>
-            </div>
         </div>
 
     </section>
