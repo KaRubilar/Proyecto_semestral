@@ -123,6 +123,7 @@ const showHTML = () => {
 	countProducts.innerText = totalOfProducts;
 };
 
+
 $("#formulario_contacto").validate({
 	rules: {
 		name: {
@@ -155,13 +156,3 @@ $("#formulario_contacto").validate({
 		}
 	}
 });
-
-$("guardar").click(function(){
-	let nombre = $("#name").val();
-	let email = $("#email").val();
-	let mensaje = $("message").val();
-	let avisos = $("avisos").is(":checked");
-
-	console.log(nombre, email, mensaje, avisos)
-
-}) 
