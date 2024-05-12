@@ -45,15 +45,46 @@
                                 </ul>
 
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Productos" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </div>
+                                <div class="dropdown" style="padding-left: 10px; float: right; border-radius: 25px;">
+                                    <button id="register-btn"  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    Iniciar sesion
+                                    </button>
+                                    <div id="dpcolor"class="dropdown-menu dropdown-menu-sm-end ">
+                                    <form class="px-4 py-3">
+                                        <div class="mb-3">
+                                        <label for="exampleDropdownFormEmail1" class="form-label">Correo electronico</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="correo@ejemplo.com">
+                                        </div>
+                                        <div class="mb-3">
+                                        <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+                                        </div>
+                                        <div class="mb-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                            Recordar
+                                            </label>
+                                        </div>
+                                        </div>
+                                        <button id="btn-oscuro" type="submit" class="btn btn-primary">Ingresar</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">¿Primera vez por aca? Registrate</a>
+                                    <a class="dropdown-item" href="#">¿Olvidaste la contraseña?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Productos" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
             </nav>
         </div>
-
         <div class="container-icon" >
             <div class="container-cart-icon">
                 <svg
@@ -79,9 +110,11 @@
                 <div class="row-product hidden">
                     <div class="cart-product">
                         <div class="info-cart-product">
-                            <span class="cantidad-producto-carrito">1</span>
-                            <p class="titulo-producto-carrito">Zapatos Nike</p>
-                            <span class="precio-producto-carrito">$80</span>
+                            <p class="cart-empty" style="text-align: center; padding-top: 15px;">
+                                El carrito está vacío</p>
+                            <span class="cantidad-producto-carrito"></span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
                         </div>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -99,10 +132,8 @@
                         </svg>
                     </div>
                 </div>
-                <p class="cart-empty" style="text-align: center; padding-top: 10px;">
-                    El carrito está vacío</p>
                 <div class="cart-total hidden">
-                    <h3>Total:</h3>
+                    <h3 style="padding-top: 6px;">Total:</h3>
                     <span class="total-pagar">$0</span>
                 </div>
                 

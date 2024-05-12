@@ -115,54 +115,37 @@
     </header>
 
     <section id="contacto">
-    <div class="container" id="contacto-estilo">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required
-             pattern=".{6,}" title="Six or more characters">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required 
-             pattern=".{6,}" title="Six or more characters">
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" id="enviar ">Enviar</button>
-        </form>
-      </div>
+        <div class="container" id="contacto-estilo">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required
+                     pattern=".{6,}" title="Seis o más caracteres">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required 
+                     pattern=".{6,}" title="Seis o más caracteres">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </div>
     </section>
+
+    <div id="mensaje-error" style="color: red;"></div>
 
     <br>
     <footer>
         <div class="container">
             <p>&copy; SomosMascotas 2024</p>
         </div>
-    </footer>
-    <script src="script.js"></script> 
-    <script>
-        var expr =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        $(document).ready(function(){
-                $("#enviar").click(function() {
-                    var nombre = $("#name").val();
-                    var email = $("#email").val();
-                    var mensaje = $("#message").val();
-                    if(nombre == ""){
-                        alert("El campo nombre es obligatorio");
-                        return false;
-                    }else if(email == "" || !expr.test(email)){
-                        alert("El campo email es obligatorio");
-                        return false;
-                    }else if(mensaje == ""){
-                        alert("El campo mensaje es obligatorio");
-                        return false;
-                    }
-                });
-            });
-        </script>
+    </footer> 
+    <script src="validar.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
