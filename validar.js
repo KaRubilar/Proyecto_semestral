@@ -8,15 +8,16 @@ $(document).ready(function() {
         var error = '';
 
         if(name.trim() == '') {
-            error += 'Por favor ingresa tu nombre.<br>';
+            error += $('#nombre').after('<div class="error-message">Por favor ingresa tu nombre.</div>');
         }
 
         if(email.trim() == '') {
-            error += 'Por favor ingresa tu email.<br>';
+            error += $('#celular').after('<div class="error-message">Por favor ingresa tu direccion de email.</div>');
         }
 
         if(message.trim() == '') {
-            error += 'Por favor ingresa tu mensaje.<br>';
+            error += $('#mensaje').after('<div class="error-mensaje">Por favor ingresa un mensaje.</div>');
+
         }
 
         if(error != '') {
